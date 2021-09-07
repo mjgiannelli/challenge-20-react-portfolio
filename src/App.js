@@ -23,7 +23,7 @@ function App() {
     },
   ])
   
-  const [selectedNavLink, setSelectedNavLink] = useState(navLinks[0]);
+  const [selectedNavLink, setSelectedNavLink] = useState(navLinks[0].name);
 
   return (
     <div>
@@ -33,15 +33,15 @@ function App() {
         setSelectedNavLink={setSelectedNavLink}
       />
       <main>
-        {selectedNavLink.name === 'about' ? (
+        {selectedNavLink === 'about' ? (
           <>
             <About />
           </>
-        ) : selectedNavLink.name === 'portfolio' ? (
+        ) : selectedNavLink === 'portfolio' ? (
           <>
             <Portfolio />
           </>
-        ) : selectedNavLink.name === 'contact' ? (
+        ) : selectedNavLink === 'contact' ? (
           <>
             <Contact />
           </>

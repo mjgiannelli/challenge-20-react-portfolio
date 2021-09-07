@@ -1,8 +1,9 @@
 const Nav = (props) => {
 
   const {
-    contactSelected,
-    setContactSelected
+    navLinks = [],
+    selectedNavLink,
+    setSelectedNavLink
   } = props;
 
     return(
@@ -16,35 +17,29 @@ const Nav = (props) => {
               <a 
               href="#about-me"
               onClick={() => 
-                setContactSelected(false)
+                setSelectedNavLink('about')
               }
               >About Me</a>
             </li>
             <li>
               <a href="#portfolio"
-              // onClick={() => 
-              //   setAboutSelected(false),
-              //   setContactSelected(false),
-              //   setPortfolioSelected(true),
-              //   setResumeSelected(false)
-              // }
+              onClick={() => 
+                setSelectedNavLink('portfolio')
+              }
               >Portfolio</a>
             </li>
             <li>
               <a href="#contact"
               onClick={() => 
-                setContactSelected(true)
+                setSelectedNavLink('contact')
               }
               >Contact</a>
             </li>
             <li>
               <a href="#Resume"
-              // onClick={() => 
-              //   setAboutSelected(false),
-              //   setContactSelected(false),
-              //   setPortfolioSelected(false),
-              //   setResumeSelected(true)
-              // }
+              onClick={() => 
+                setSelectedNavLink('resume')
+              }
               >Resume</a>
             </li>
           </ul>
