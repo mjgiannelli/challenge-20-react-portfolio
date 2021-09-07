@@ -1,14 +1,8 @@
 const Nav = (props) => {
 
   const {
-    aboutSelected,
-    setAboutSelected,
-    portfolioSelected,
-    setPortfolioSelected,
     contactSelected,
-    setContactSelected,
-    resumeSelected,
-    setResumeSelected
+    setContactSelected
   } = props;
 
     return(
@@ -22,41 +16,35 @@ const Nav = (props) => {
               <a 
               href="#about-me"
               onClick={() => 
-                setAboutSelected(true),
-                setContactSelected(false),
-                setPortfolioSelected(false),
-                setResumeSelected(false)
+                setContactSelected(false)
               }
               >About Me</a>
             </li>
             <li>
               <a href="#portfolio"
-              onClick={() => 
-                setAboutSelected(false),
-                setContactSelected(false),
-                setPortfolioSelected(true),
-                setResumeSelected(false)
-              }
+              // onClick={() => 
+              //   setAboutSelected(false),
+              //   setContactSelected(false),
+              //   setPortfolioSelected(true),
+              //   setResumeSelected(false)
+              // }
               >Portfolio</a>
             </li>
             <li>
               <a href="#contact"
               onClick={() => 
-                setAboutSelected(false),
-                setContactSelected(true),
-                setPortfolioSelected(false),
-                setResumeSelected(false)
+                setContactSelected(true)
               }
               >Contact</a>
             </li>
             <li>
               <a href="#Resume"
-              onClick={() => 
-                setAboutSelected(false),
-                setContactSelected(false),
-                setPortfolioSelected(false),
-                setResumeSelected(true)
-              }
+              // onClick={() => 
+              //   setAboutSelected(false),
+              //   setContactSelected(false),
+              //   setPortfolioSelected(false),
+              //   setResumeSelected(true)
+              // }
               >Resume</a>
             </li>
           </ul>

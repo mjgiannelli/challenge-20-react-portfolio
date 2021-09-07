@@ -2,7 +2,7 @@ function AboutMe() {
     return (
       <section className="hero">
         <article className="me">
-          <h2 id="about-me" className="title">About Me</h2>
+          <h2 className="title">About Me</h2>
           <div className="bio">
             <p className="para1">
               Hello and welcome to my portfolio! My name is Mark Giannelli. In 2021, I decided to leave the

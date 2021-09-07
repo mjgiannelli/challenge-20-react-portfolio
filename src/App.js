@@ -8,33 +8,46 @@ import Footer from './components/Footer';
 
 function App() {
 
-  const [aboutSelected, setAboutSelected] = useState(true);
-  const [portfolioSelected, setPortfolioSelected] = useState(false);
-  const [contactSelected, setContactSelected] = useState(false);
-  const [resumeSelected, setResumeSelected] = useState(false);
+  const [navLinks] = useState([
+    {
+      name: 'about'
+    },
+    {
+      name: 'portfolio'
+    },
+    {
+      name: 'contact'
+    },
+    {
+      name: 'resume'
+    },
+  ])
+  
+  const [selectedNavLink, setSelectedNavLink] = useState(navLinks[0]);
 
   return (
     <div>
-      <Nav 
-      aboutSelected={aboutSelected}
-      setAboutSelected={setAboutSelected}
-      contactSelected={contactSelected}
-      setContactSelected={setContactSelected}
-      portfolioSelected={portfolioSelected}
-      setPortfolioSelected={setPortfolioSelected}
-      resumeSelected={resumeSelected}
-      setResumeSelected={setResumeSelected}
+      <Nav
+        navLinks={navLinks}
+        selectedNavLink={selectedNavLink}
+        setSelectedNavLink={setSelectedNavLink}
       />
       <main>
-        {aboutSelected ? (
+        {selectedNavLink.name === 'about' ? (
           <>
-          <About />
+            <About />
+          </>
+        ) : selectedNavLink.name === 'portfolio' ? (
+          <>
+            <Portfolio />
+          </>
+        ) : selectedNavLink.name === 'contact' ? (
+          <>
+            <Contact />
           </>
         ) : (
           <>
-          <Portfolio />
-          <Contact />
-          <Resume />
+            <Resume />
           </>
         )}
       </main>
