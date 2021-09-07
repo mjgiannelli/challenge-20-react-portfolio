@@ -1,10 +1,11 @@
-import Projects from "../Projects";
+import ProjectList from "../ProjectList";
 
 const Portfolio = () => {
     return (
-        <div>
-            <Projects />
-        </div>
+        <section>
+            <h1>Portfolio</h1>
+            <ProjectList />
+        </section>
     )
 }
 

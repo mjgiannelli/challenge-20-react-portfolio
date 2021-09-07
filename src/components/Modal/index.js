@@ -1,6 +1,6 @@
 const Modal = () => {
     return (
-        <p>hello</p>
+        <p>hello modal</p>
     )
 }
 
