@@ -1,6 +1,7 @@
 import './App.css';
 import Nav from './components/Nav';
-import About from './components/About'
+import About from './components/About';
+import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <div>
       <Nav />
       <main>
-      <About />
+        <About />
+        <Portfolio />
       </main>
       <Footer />
     </div>
