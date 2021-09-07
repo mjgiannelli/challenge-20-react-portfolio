@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import Modal from "../Modal";
 
 const ProjectList = () => {
@@ -35,10 +35,29 @@ const ProjectList = () => {
             github: 'https://github.com/mjgiannelli/challenge-6-weather-dashboard'
         }
     ])
-    
+
+    const [currentProject, setCurrentProject] = useState();
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const toggleModal = (image) => {
+        setCurrentProject(image)
+        setIsModalOpen(!isModalOpen)
+    }
+
     return (
         <div>
-            <Modal />
+            {isModalOpen && <Modal currentProject={currentProject} onClose={toggleModal} />}
+            <div>
+                {projects.map((image) => (
+                    <img
+                        src={require(`../../assets/images/${image.name}.png`).default}
+                        alt={image.name}
+                        onClick={() => toggleModal(image)}
+                        key={image.name}
+                    />
+                ))}
+            </div>
         </div>
     )
 }
