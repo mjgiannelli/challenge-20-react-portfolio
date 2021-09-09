@@ -53,7 +53,7 @@ const Nav = (props) => {
           </div>
         </nav>
       </div>
-
+      <hr></hr>
     </header>
   )
 }

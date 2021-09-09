@@ -1,29 +1,21 @@
 function AboutMe() {
-    return (
-      <section className="hero">
-        <article className="me">
-          <h2 className="title">About Me</h2>
-          <div className="bio">
-            <p className="para1">
-              Hello and welcome to my portfolio! My name is Mark Giannelli. In 2021, I decided to leave the
-              accounting industry for good and pursue a career path that aligns more with my values. I have a
-              passion for coding, logic and problem solving. I have a thirst for knowledge that will never be
-              quenched no matter how many gatorades I drink.
-            </p>
-            <div>
-              <img className="selfie" src={require('../../assets/images/me-black-background-3.jpg').default}
-                alt="professional selfie for Mark Giannelli" />
-            </div>
-            <p className="para2">
-              Currently I'm a student in UT's coding bootcamp. I've never been more challenged and excited at the
-              same time in my life. At this point we have studied HTML & CSS, with Javascript on the horizon. This
-              webpage will be an example of all the skills I've developed from this camp. I hope you're as
-              thrilled as me to see how this portfolio evolves over the next 6 months! Enjoy!
-            </p>
-          </div>
-        </article>
-      </section>
-    )
-  }
+  return (
+    <article className="box">
+      <h2 className="title">About Me <br /> <span id="contributions">1,442 GitHub Contributions</span></h2>
+      <div className="row flex column">
+        <p className="col-10">
+          Accountant turned Web Developer <span>&copy;</span> May 2, 2021.
+        </p>
+        <img id='selfie' src={require('../../assets/images/me-black-background-3.jpg').default}
+          alt="professional selfie for Mark Giannelli" />
+        <p id='bio' className="col-10">
+          I've found my passsion in life. I would do this work for free. This career satiates everything I
+          look for in a position. It's challenging, logic based and always evolving keeping me in the
+          perpetual state of being a student. I wake up every morning thrilled to code!
+        </p>
+      </div>
+    </article>
+  )
+}
 
-  export default AboutMe;
+export default AboutMe;
