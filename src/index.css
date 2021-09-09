@@ -377,6 +377,31 @@ footer .col-10 {
   width: 12.8rem;
 }
 
+#resume-link-div {
+  justify-content: center;
+}
+
+#resume-link {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+#skills-div {
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.skill {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */

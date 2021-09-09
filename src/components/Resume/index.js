@@ -33,14 +33,20 @@ const Resume = () => {
 
     return (
         <section>
-            <h2>Resume</h2>
-            <a href='https://drive.google.com/uc?export=download&id=1LuV8Xtmh3IbubZY3IaxK8kGpKIrT23pE' download>Download Resume</a>
-            <h3>Proficiencies</h3>
-            <ul>
-                {skills.map((skill, index) => (
-                    <li key={index}>{skill.name}</li>
-                ))}
-            </ul>
+            <h2 className='title'>Resume</h2>
+            <div className='box'>
+                <div id='resume-link-div' className='row'>
+                    <a id='resume-link' href='https://drive.google.com/uc?export=download&id=1LuV8Xtmh3IbubZY3IaxK8kGpKIrT23pE' download>Click Me To Download Resume 😃</a>
+                </div>
+                <h3>Proficiencies</h3>
+                <div id='skills-div' className='row'>
+                    <ul>
+                        {skills.map((skill, index) => (
+                            <li className='skill' key={index}>{skill.name}</li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
         </section>
     )
 }
