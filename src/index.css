@@ -361,6 +361,22 @@ footer .col-10 {
   text-align: center;
 }
 
+.form {
+  flex-direction: column;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+#form-btn-div {
+  justify-content: center;
+}
+
+#form-btn {
+  font-size: 2rem;
+  align-items: center;
+  width: 12.8rem;
+}
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
