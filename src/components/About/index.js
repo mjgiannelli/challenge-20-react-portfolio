@@ -1,7 +1,7 @@
 function AboutMe() {
   return (
     <article className="box">
-      <h2 className="title">About Me <br /> <span id="contributions">1,442 GitHub Contributions</span></h2>
+      <h2 className="title">About Me <br /> <span id="contributions">1,642 GitHub Contributions</span></h2>
       <div className="row flex column">
         <p className="col-10">
           Accountant turned Web Developer <span>&copy;</span> May 2, 2021.
