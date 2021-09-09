@@ -1,4 +1,4 @@
-import './App.css';
+import { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -7,14 +7,49 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
+
+  const [navLinks] = useState([
+    {
+      name: 'About'
+    },
+    {
+      name: 'Portfolio'
+    },
+    {
+      name: 'Contact'
+    },
+    {
+      name: 'Resume'
+    },
+  ])
+  
+  const [selectedNavLink, setSelectedNavLink] = useState(navLinks[0].name);
+
   return (
     <div>
-      <Nav />
+      <Nav
+        navLinks={navLinks}
+        selectedNavLink={selectedNavLink}
+        setSelectedNavLink={setSelectedNavLink}
+      />
       <main>
-        <About />
-        <Portfolio />
-        <Contact />
-        <Resume />
+        {selectedNavLink === 'About' ? (
+          <>
+            <About />
+          </>
+        ) : selectedNavLink === 'Portfolio' ? (
+          <>
+            <Portfolio />
+          </>
+        ) : selectedNavLink === 'Contact' ? (
+          <>
+            <Contact />
+          </>
+        ) : (
+          <>
+            <Resume />
+          </>
+        )}
       </main>
       <Footer />
     </div>
