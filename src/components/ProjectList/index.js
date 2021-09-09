@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Modal from "../Modal";
+import { formatTitle } from '../../utils/helpers';
 
 const ProjectList = () => {
 
@@ -46,12 +47,13 @@ const ProjectList = () => {
     }
 
     return (
-        <div>
+        <div id='projects' className='row'>
             {isModalOpen && <Modal currentProject={currentProject} onClose={toggleModal} />}
             {projects.map((image, index) => (
-                <div>
-                    <h2>{image.name}</h2>
+                <div className='col-4 project'>
+                    <h2>{formatTitle(image.name)}</h2>
                     <img
+                        
                         src={require(`../../assets/images/${image.name}.png`).default}
                         alt={image.name}
                         onClick={() => toggleModal(image)}

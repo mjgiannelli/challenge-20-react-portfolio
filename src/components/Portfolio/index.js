@@ -2,8 +2,8 @@ import ProjectList from "../ProjectList";
 
 const Portfolio = () => {
     return (
-        <section>
-            <h1>Portfolio</h1>
+        <section className='box'>
+            <h2 className='title'>Portfolio</h2>
             <ProjectList />
         </section>
     )
