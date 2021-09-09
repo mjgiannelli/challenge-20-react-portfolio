@@ -348,6 +348,11 @@ footer .col-10 {
   text-align: center;
 }
 
+#icon-div {
+  justify-content: center;
+  padding: 1rem 0;
+}
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -366,6 +371,8 @@ footer .col-10 {
       width: 45rem;
       height: 22rem;
   }
+
+ 
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -427,10 +434,6 @@ footer .col-10 {
 
   #linkedin {
       width: 12%
-  }
-
-  footer .col-10 {
-      text-align: right;
   }
 }
 
