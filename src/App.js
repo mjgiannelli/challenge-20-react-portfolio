@@ -10,16 +10,16 @@ function App() {
 
   const [navLinks] = useState([
     {
-      name: 'about'
+      name: 'About'
     },
     {
-      name: 'portfolio'
+      name: 'Portfolio'
     },
     {
-      name: 'contact'
+      name: 'Contact'
     },
     {
-      name: 'resume'
+      name: 'Resume'
     },
   ])
   
@@ -33,15 +33,15 @@ function App() {
         setSelectedNavLink={setSelectedNavLink}
       />
       <main>
-        {selectedNavLink === 'about' ? (
+        {selectedNavLink === 'About' ? (
           <>
             <About />
           </>
-        ) : selectedNavLink === 'portfolio' ? (
+        ) : selectedNavLink === 'Portfolio' ? (
           <>
             <Portfolio />
           </>
-        ) : selectedNavLink === 'contact' ? (
+        ) : selectedNavLink === 'Contact' ? (
           <>
             <Contact />
           </>
