@@ -444,6 +444,11 @@ ul {
   width: 5rem;
 }
 
+.error-text {
+  color: var(--secondary-color);
+  font-size: 3rem;
+}
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
