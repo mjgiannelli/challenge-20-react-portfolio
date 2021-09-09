@@ -46,12 +46,13 @@ const ProjectList = () => {
     }
 
     return (
-        <div>
+        <div id='projects' className='row'>
             {isModalOpen && <Modal currentProject={currentProject} onClose={toggleModal} />}
             {projects.map((image, index) => (
-                <div>
+                <div className='col-4 project'>
                     <h2>{image.name}</h2>
                     <img
+                        
                         src={require(`../../assets/images/${image.name}.png`).default}
                         alt={image.name}
                         onClick={() => toggleModal(image)}

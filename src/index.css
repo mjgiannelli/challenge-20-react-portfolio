@@ -208,6 +208,10 @@ body {
   text-align: center;
 }
 
+.col-4 {
+  width: 100%;
+}
+
 .col-5 {
   width: 100%;
   text-align: center;
@@ -310,13 +314,13 @@ span {
 
 /* style the portfolio section */
 
-.picture {
-  width: 28.3rem;
-  height: 23.5rem;
+img {
+  width: 100%;
+  margin: auto 0;
   margin-bottom: 2rem;
 }
 
-.picture:hover {
+img:hover {
   border: 10px solid var(--text-color);
 }
 
@@ -351,6 +355,10 @@ footer .col-10 {
 #icon-div {
   justify-content: center;
   padding: 1rem 0;
+}
+
+.project {
+  text-align: center;
 }
 
 }
@@ -405,7 +413,15 @@ footer .col-10 {
   }
 
   .col-3 {
-      width: 33%;
+      width: 30%;
+  }
+
+  .col-4 {
+    width: 40%;
+}
+
+  #projects {
+    justify-content: space-between;
   }
 
   #contact-info {
