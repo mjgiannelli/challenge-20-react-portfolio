@@ -22,6 +22,7 @@ const Nav = (props) => {
             <ul id='nav-links' className='row'>
               <li className='col-2'>
                 <a
+                  className={`${selectedNavLink === 'About' && 'navActive'}`}
                   href="#about-me"
                   onClick={() =>
                     setSelectedNavLink('About')
@@ -29,21 +30,27 @@ const Nav = (props) => {
                 >About Me</a>
               </li>
               <li className='col-2'>
-                <a href="#portfolio"
+                <a 
+                className={`${selectedNavLink === 'Portfolio' && 'navActive'}`}
+                href="#portfolio"
                   onClick={() =>
                     setSelectedNavLink('Portfolio')
                   }
                 >Portfolio</a>
               </li>
               <li className='col-2'>
-                <a href="#contact"
+                <a 
+                className={`${selectedNavLink === 'Contact' && 'navActive'}`}
+                href="#contact"
                   onClick={() =>
                     setSelectedNavLink('Contact')
                   }
                 >Contact</a>
               </li>
               <li className='col-2'>
-                <a href="#Resume"
+                <a 
+                className={`${selectedNavLink === 'Resume' && 'navActive'}`}
+                href="#Resume"
                   onClick={() =>
                     setSelectedNavLink('Resume')
                   }

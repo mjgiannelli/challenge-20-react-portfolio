@@ -449,6 +449,10 @@ ul {
   font-size: 3rem;
 }
 
+.navActive {
+  color: var(--secondary-color);
+}
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
