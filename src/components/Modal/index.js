@@ -1,9 +1,11 @@
+import { formatTitle } from '../../utils/helpers';
+
 const Modal = ({ onClose, currentProject }) => {
     const { name, deploy, github } = currentProject
     return (
         <div id='modal' className='box border'>
             <div id='modal-content' className='row'>
-                <h3 id='modal-title'>{name}</h3>
+                <h3 id='modal-title'>{formatTitle(name)}</h3>
                 <div className='col-10'>
                     <p id='modal-subtitle'>Deployed App and Github Repo Links</p>
                 </div>

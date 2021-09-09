@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Modal from "../Modal";
+import { formatTitle } from '../../utils/helpers';
 
 const ProjectList = () => {
 
@@ -50,7 +51,7 @@ const ProjectList = () => {
             {isModalOpen && <Modal currentProject={currentProject} onClose={toggleModal} />}
             {projects.map((image, index) => (
                 <div className='col-4 project'>
-                    <h2>{image.name}</h2>
+                    <h2>{formatTitle(image.name)}</h2>
                     <img
                         
                         src={require(`../../assets/images/${image.name}.png`).default}
