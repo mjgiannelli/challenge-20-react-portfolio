@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.10f6d4a0.chunk.css",
-    "main.js": "/static/js/main.d1ea65c9.chunk.js",
-    "main.js.map": "/static/js/main.d1ea65c9.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.cb1e5719.js",
-    "runtime-main.js.map": "/static/js/runtime-main.cb1e5719.js.map",
-    "static/js/2.6df06a63.chunk.js": "/static/js/2.6df06a63.chunk.js",
-    "static/js/2.6df06a63.chunk.js.map": "/static/js/2.6df06a63.chunk.js.map",
-    "static/js/3.2d296362.chunk.js": "/static/js/3.2d296362.chunk.js",
-    "static/js/3.2d296362.chunk.js.map": "/static/js/3.2d296362.chunk.js.map",
+    "main.css": "/static/css/main.75345486.chunk.css",
+    "main.js": "/static/js/main.2cb18479.chunk.js",
+    "main.js.map": "/static/js/main.2cb18479.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.75a4402d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.75a4402d.js.map",
+    "static/js/2.58e0c598.chunk.js": "/static/js/2.58e0c598.chunk.js",
+    "static/js/2.58e0c598.chunk.js.map": "/static/js/2.58e0c598.chunk.js.map",
+    "static/js/3.cd9864e2.chunk.js": "/static/js/3.cd9864e2.chunk.js",
+    "static/js/3.cd9864e2.chunk.js.map": "/static/js/3.cd9864e2.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.10f6d4a0.chunk.css.map": "/static/css/main.10f6d4a0.chunk.css.map",
-    "static/js/2.6df06a63.chunk.js.LICENSE.txt": "/static/js/2.6df06a63.chunk.js.LICENSE.txt",
+    "static/css/main.75345486.chunk.css.map": "/static/css/main.75345486.chunk.css.map",
+    "static/js/2.58e0c598.chunk.js.LICENSE.txt": "/static/js/2.58e0c598.chunk.js.LICENSE.txt",
     "static/media/find-my-boards.png": "/static/media/find-my-boards.0f619411.png",
     "static/media/movie-date.png": "/static/media/movie-date.d9a0b958.png",
     "static/media/note-taker.png": "/static/media/note-taker.7a665014.png",
     "static/media/pizza-hunt.png": "/static/media/pizza-hunt.03eaa81f.png",
+    "static/media/screenshot.png": "/static/media/screenshot.c4d7dd22.png",
     "static/media/tech-blog.png": "/static/media/tech-blog.e239cac3.png",
     "static/media/weather-dash.png": "/static/media/weather-dash.83a689b5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cb1e5719.js",
-    "static/js/2.6df06a63.chunk.js",
-    "static/css/main.10f6d4a0.chunk.css",
-    "static/js/main.d1ea65c9.chunk.js"
+    "static/js/runtime-main.75a4402d.js",
+    "static/js/2.58e0c598.chunk.js",
+    "static/css/main.75345486.chunk.css",
+    "static/js/main.2cb18479.chunk.js"
   ]
 }
