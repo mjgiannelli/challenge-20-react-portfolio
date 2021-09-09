@@ -415,6 +415,13 @@ footer .col-10 {
       width: 60rem;
       height: 25rem;
   }
+
+#nav-links {
+  justify-content: space-between;
+}
+  .col-2 {
+    width: 20%;
+}
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -490,11 +497,6 @@ footer .col-10 {
 
   .picture {
       width: 45rem;
-  }
-
-  .col-2 {
-      width: 45%;
-      margin: 0 auto;
   }
 
   #weather-dash {

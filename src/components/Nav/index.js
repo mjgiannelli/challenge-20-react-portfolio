@@ -19,7 +19,7 @@ const Nav = (props) => {
         </h1>
         <nav className='col-7'>
           <div className='box'>
-            <ul className='row'>
+            <ul id='nav-links' className='row'>
               <li className='col-2'>
                 <a
                   href="#about-me"
