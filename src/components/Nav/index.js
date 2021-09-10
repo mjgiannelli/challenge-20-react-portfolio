@@ -15,7 +15,7 @@ const Nav = (props) => {
     <header className='box'>
       <div className='row'>
         <h1 id='name' className='col-3'>
-          <a href="https://mjgiannelli.github.io/mark-giannelli-portfolio/" id='home'>Mark Giannelli <br /> Portfolio</a>
+          <a href="https://www.markgiannelli.com" id='home'>Mark Giannelli <br /> Portfolio</a>
         </h1>
         <nav className='col-7'>
           <div className='box'>
