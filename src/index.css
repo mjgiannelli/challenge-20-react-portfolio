@@ -471,7 +471,17 @@ ul {
   background-size: cover;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#topps-div {
+  padding-top: .5rem;
+  padding-right: .5rem;
+}
+
+#topps {
+  width: 6rem;
 }
 
 #card-signature-div {
@@ -482,6 +492,7 @@ ul {
   margin-bottom: 1rem;
   background-color: black;
   display: flex;
+  align-self: center;
 }
 
 #card-signature {
