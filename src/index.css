@@ -459,6 +459,16 @@ ul {
   height: 30rem;
   margin: auto;
   background-color: rgb(211,184,147);
+  display: flex;
+}
+
+#card-body {
+  border: solid .3rem white;
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  background: url('./assets/images/me-black-background-3.jpg') center center no-repeat;
+  background-size: cover;
 }
 
 }
