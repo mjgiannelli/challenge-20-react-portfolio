@@ -1,4 +1,4 @@
-import BaseballCardFront from './BaseballCard';
+import BaseballCardFront from './BaseballCardFront';
 
 function AboutMe() {
   return (
