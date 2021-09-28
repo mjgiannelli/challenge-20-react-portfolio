@@ -1,4 +1,4 @@
-import BaseballCard from './BaseballCard';
+import BaseballCardFront from './BaseballCard';
 
 function AboutMe() {
   return (
@@ -17,7 +17,7 @@ function AboutMe() {
     //     </p>
     //   </div>
     // </article>
-    <BaseballCard />
+    <BaseballCardFront />
   )
 }
 

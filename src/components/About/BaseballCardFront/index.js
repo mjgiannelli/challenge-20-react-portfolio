@@ -1,4 +1,4 @@
-const BaseballCard = () => {
+const BaseballCardFront = () => {
     return (
         <div id='card-container'>
             <div id='card-body'>
@@ -20,4 +20,4 @@ const BaseballCard = () => {
     )
 }
 
-export default BaseballCard;
+export default BaseballCardFront;
