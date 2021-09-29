@@ -1,7 +1,12 @@
 import BaseballCardFront from './BaseballCardFront';
+import BaseballCardBack from './BaseballCardBack';
 
 function AboutMe() {
   return (
+    <div>
+      <BaseballCardFront />
+      <BaseballCardBack />
+    </div>
     // <article className="box">
     //   <h2 className="title">About Me <br /> <span id="contributions">1,849 GitHub Contributions</span></h2>
     //   <div className="row flex column">
@@ -17,7 +22,7 @@ function AboutMe() {
     //     </p>
     //   </div>
     // </article>
-    <BaseballCardFront />
+
   )
 }
 
