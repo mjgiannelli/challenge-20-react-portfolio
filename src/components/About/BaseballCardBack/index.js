@@ -1,6 +1,6 @@
-const BaseballCardBack = () => {
+const BaseballCardBack = (props) => {
     return (
-        <div id='card-container'>
+        <div id='card-container' onClick={props.handleClick}>
             <p>
                 Hello
             </p>

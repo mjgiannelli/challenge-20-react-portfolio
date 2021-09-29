@@ -1,6 +1,6 @@
-const BaseballCardFront = () => {
+const BaseballCardFront = (props) => {
     return (
-        <div id='card-container'>
+        <div id='card-container' onClick={props.handleClick}>
             <div id='card-body'>
                 <div id='topps-div'>
                 <img id='topps' src="https://www.logosurfer.com/wp-content/uploads/2018/03/topps-logo_0.png"  alt="Topps Logo" />

@@ -1,12 +1,29 @@
+import { useState } from 'react';
+import ReactCardFlip from 'react-card-flip'
+
 import BaseballCardFront from './BaseballCardFront';
 import BaseballCardBack from './BaseballCardBack';
 
 function AboutMe() {
+
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    console.log('clicked');
+
+    setIsFlipped(!isFlipped);
+  }
+
   return (
-    <div>
-      <BaseballCardFront />
-      <BaseballCardBack />
-    </div>
+    <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
+        <BaseballCardFront handleClick={handleClick}>
+        </BaseballCardFront>
+
+        <BaseballCardBack handleClick={handleClick}>
+        </BaseballCardBack>
+    </ReactCardFlip>
     // <article className="box">
     //   <h2 className="title">About Me <br /> <span id="contributions">1,849 GitHub Contributions</span></h2>
     //   <div className="row flex column">
