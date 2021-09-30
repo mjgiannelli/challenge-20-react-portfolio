@@ -33,6 +33,9 @@ function AboutMe() {
           <BaseballCardBack handleClick={handleClick}>
           </BaseballCardBack>
         </ReactCardFlip>
+        <p className="col-10">
+          Flip the card over to see GitHub Stats!
+        </p>
       </div>
     </article>
 
