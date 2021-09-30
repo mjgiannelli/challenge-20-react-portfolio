@@ -453,7 +453,7 @@ ul {
   color: var(--secondary-color);
 }
 
-#card-container {
+.card-container {
   border: solid .5rem white;
   width: 20rem;
   height: 30rem;
@@ -462,7 +462,7 @@ ul {
   display: flex;
 }
 
-#card-body {
+#front-card-body {
   border: solid .3rem white;
   width: 95%;
   height: 95%;
@@ -475,16 +475,16 @@ ul {
   flex-direction: column;
 }
 
-#topps-div {
+.topps-div {
   padding-top: .5rem;
   padding-right: .5rem;
 }
 
-#topps {
+.topps {
   width: 6rem;
 }
 
-#card-signature-div {
+#front-card-signature-div {
   border: solid .5rem white;
   border-image: url('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/285/star_2b50.png');
   height: 20%;
@@ -516,6 +516,26 @@ ul {
     width: 100%;
     font-family: Brush Script MT, Brush Script Std, cursive;
     margin-top: 0rem;
+}
+
+#back-card-body {
+  width: 98%;
+  margin-top: .5rem;
+}
+
+#num {
+  font-size: 4rem;
+  border: black .3rem solid;
+  border-radius: 10rem;
+  color: black;
+  background: repeating-linear-gradient(
+  90deg, white 3rem, blue, white, blue, white);
+  font-weight: bold;
+  padding: .2rem;
+}
+
+#back-header {
+  justify-content: space-between;
 }
 
 }

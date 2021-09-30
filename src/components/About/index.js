@@ -11,19 +11,24 @@ function AboutMe() {
   const handleClick = (e) => {
     e.preventDefault();
 
-    console.log('clicked');
-
     setIsFlipped(!isFlipped);
   }
 
   return (
-    <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
+    <div>
+      <p>
+        I've found my passsion in life. This career satiates everything I
+        look for in a position. It's challenging, logic based and always evolving. I wake up every morning thrilled to code!
+      </p>
+      <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
         <BaseballCardFront handleClick={handleClick}>
         </BaseballCardFront>
 
         <BaseballCardBack handleClick={handleClick}>
         </BaseballCardBack>
-    </ReactCardFlip>
+      </ReactCardFlip>
+    </div>
+
     // <article className="box">
     //   <h2 className="title">About Me <br /> <span id="contributions">1,849 GitHub Contributions</span></h2>
     //   <div className="row flex column">
