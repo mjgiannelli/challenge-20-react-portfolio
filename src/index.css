@@ -571,6 +571,18 @@ ul {
   font-size: 3rem;
 }
 
+#demo { 
+  width: 100px; 
+  height: 100px; 
+  background: red; 
+  animation: bounce 0.8s alternate;
+  border-radius: 10rem;
+  animation-iteration-count: 2;
+}
+
+@keyframes bounce { 0% { transform: translateY(0); } 100% { transform: translateY(-50px); } }
+
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
