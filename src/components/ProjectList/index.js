@@ -39,9 +39,9 @@ const ProjectList = () => {
     return (
         <div id='projects' className='row'>
             {projects.map((image, index) => (
-                <div className='project'>
+                <div  className='project col-4'>
                     <h2>{formatTitle(image.name)}</h2>
-                    <div className='col-4 project'>
+                    <div>
                         <img
                             className='project_img'
                             src={require(`../../assets/images/${image.name}.png`).default}
@@ -50,8 +50,11 @@ const ProjectList = () => {
                         />
                         <div className='project_description border project-content'>
                             <div className='row project_details'>
+                            <div className='col-10'>
+                                    <p className='project-name'>{formatTitle(image.name)}</p>
+                                </div>
                                 <div className='col-10'>
-                                    <p>Deployed App and Github Repo Links</p>
+                                    <p className='project-title'>Deployed App and Github Repo Links</p>
                                 </div>
                                 <div className='col-10'>
                                     <a className='project-links' href={image.deploy} target='_blank'>Deployed App Link</a>

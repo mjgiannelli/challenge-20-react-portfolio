@@ -566,44 +566,33 @@ ul {
   opacity: 1;
 }
 
+.project-name {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
- .picture {
-      width: 40rem;
-      height: 28rem;
- }
 
- #profile-gen {
-      width: 40rem;
-      height: 32rem;
+  .project-title {
+    font-size: 2.5rem;
   }
 
-  #weather-dash {
-      width: 45rem;
-      height: 22rem;
+  .project-links {
+    font-size: 2rem;
   }
-
  
+  .project-name {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+  }
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .picture {
-      width: 50rem;
-      height: 30rem;
-  }
-
-  #profile-gen {
-      width: 50rem;
-      height: 35rem;
-  }
-
-  #weather-dash {
-      width: 60rem;
-      height: 25rem;
-  }
 
 #nav-links {
   justify-content: space-between;
@@ -615,6 +604,20 @@ ul {
 .stats {
   width: 100%;
 }
+
+.project-title {
+  font-size: 3rem;
+}
+
+.project-links {
+  font-size: 2.5rem;
+}
+
+.project-name {
+  margin-bottom: 5rem;
+  font-size: 5rem;
+}
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -666,6 +669,19 @@ ul {
 
   #linkedin {
       width: 12%
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+  
+  .project-links {
+    font-size: 1.5rem;
+}
+  
+  .project-name {
+    margin-bottom: 3rem;
+    font-size: 3rem;
   }
 }
 
@@ -740,6 +756,19 @@ ul {
 
 .stats {
   font-size: 1.75rem;
+}
+
+.project-title {
+  font-size: 2.25rem;
+}
+
+.project-links {
+  font-size: 2rem;
+}
+
+.project-name {
+  margin-bottom: 4rem;
+  font-size: 4rem;
 }
 
 }
