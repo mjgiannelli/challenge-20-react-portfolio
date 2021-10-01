@@ -53,12 +53,15 @@ const ProjectList = () => {
                 <div className='col-4 project'>
                     <h2>{formatTitle(image.name)}</h2>
                     <img
-                        
+                        className='project_img'
                         src={require(`../../assets/images/${image.name}.png`).default}
                         alt={image.name}
                         onClick={() => toggleModal(image)}
                         key={index}
                     />
+                    <div className='project_description'>
+                    <p className='project_description'>Test Description</p>
+                    </div>
                 </div>
             ))}
         </div>
