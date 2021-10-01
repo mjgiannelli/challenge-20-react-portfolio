@@ -6,7 +6,7 @@ const Portfolio = () => {
         <section className='box'>
             <h2 className='title'>Portfolio</h2>
             <Ball />
-            <ProjectList />
+            {/* <ProjectList /> */}
            
         </section>
     )

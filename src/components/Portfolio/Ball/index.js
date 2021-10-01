@@ -1,6 +1,9 @@
 const Ball = () => {
-    return(
-        <div id="demo"></div> 
+    return (
+        <div>
+            <div id="ball"></div>
+            <div id='shadow'></div>
+        </div>
     )
 }
 

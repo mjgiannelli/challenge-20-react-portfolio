@@ -571,17 +571,32 @@ ul {
   font-size: 3rem;
 }
 
-#demo { 
+#ball { 
   width: 100px; 
   height: 100px; 
   background: red; 
   animation: bounce 0.8s alternate;
   border-radius: 10rem;
-  animation-iteration-count: 2;
+  animation-iteration-count: 4;
+  background: radial-gradient(
+    circle at 30% 30%,
+    red,
+    black
+  );
+  box-shadow: 2rem 4rem 4.5rem 0rem white;
 }
 
-@keyframes bounce { 0% { transform: translateY(0); } 100% { transform: translateY(-50px); } }
+@keyframes bounce { 
+  0% { transform: translateY(0); } 
+  100% { transform: translateY(-50px); } 
+}
 
+#shadow {
+  z-index: 1;
+  position: relative;
+  margin-top: -3.5rem;
+  
+}
 
 }
 
