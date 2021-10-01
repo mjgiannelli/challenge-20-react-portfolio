@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Modal from "../Modal";
 import { formatTitle } from '../../utils/helpers';
 
 const ProjectList = () => {
@@ -37,28 +36,35 @@ const ProjectList = () => {
         }
     ])
 
-    const [currentProject, setCurrentProject] = useState();
-
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
-    const toggleModal = (image) => {
-        setCurrentProject(image)
-        setIsModalOpen(!isModalOpen)
-    }
-
     return (
         <div id='projects' className='row'>
-            {isModalOpen && <Modal currentProject={currentProject} onClose={toggleModal} />}
             {projects.map((image, index) => (
-                <div className='col-4 project'>
+                <div  className='project col-4'>
                     <h2>{formatTitle(image.name)}</h2>
-                    <img
-                        
-                        src={require(`../../assets/images/${image.name}.png`).default}
-                        alt={image.name}
-                        onClick={() => toggleModal(image)}
-                        key={index}
-                    />
+                    <div>
+                        <img
+                            className='project_img'
+                            src={require(`../../assets/images/${image.name}.png`).default}
+                            alt={image.name}
+                            key={index}
+                        />
+                        <div className='project_description border project-content'>
+                            <div className='row project_details'>
+                            <div className='col-10'>
+                                    <p className='project-name'>{formatTitle(image.name)}</p>
+                                </div>
+                                <div className='col-10'>
+                                    <p className='project-title'>Deployed App and Github Repo Links</p>
+                                </div>
+                                <div className='col-10'>
+                                    <a className='project-links' href={image.deploy} target='_blank'>Deployed App Link</a>
+                                </div>
+                                <div className='col-10'>
+                                    <a className='project-links' href={image.github} target='_blank'>GitHub Repo Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             ))}
         </div>
