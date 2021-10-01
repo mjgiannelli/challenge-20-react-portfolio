@@ -48,19 +48,16 @@ const ProjectList = () => {
                             alt={image.name}
                             key={index}
                         />
-                        <div className='project_description'>
-                            <div id='modal' className='box border'>
-                                <div id='modal-content' className='row'>
-                                    <h3 id='modal-title'>{formatTitle(image.name)}</h3>
-                                    <div className='col-10'>
-                                        <p id='modal-subtitle'>Deployed App and Github Repo Links</p>
-                                    </div>
-                                    <div className='col-10 modal-links-div'>
-                                        <a className='modal-links' href={image.deploy} target='_blank'>Deployed App Link</a>
-                                    </div>
-                                    <div className='col-10 modal-links-div'>
-                                        <a className='modal-links' href={image.github} target='_blank'>GitHub Repo Link</a>
-                                    </div>
+                        <div className='project_description border project-content'>
+                            <div className='row project_details'>
+                                <div className='col-10'>
+                                    <p>Deployed App and Github Repo Links</p>
+                                </div>
+                                <div className='col-10'>
+                                    <a className='project-links' href={image.deploy} target='_blank'>Deployed App Link</a>
+                                </div>
+                                <div className='col-10'>
+                                    <a className='project-links' href={image.github} target='_blank'>GitHub Repo Link</a>
                                 </div>
                             </div>
                         </div>
