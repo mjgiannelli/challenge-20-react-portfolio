@@ -618,6 +618,12 @@ ul {
   font-size: 5rem;
 }
 
+#contact-form {
+  width: 61.5rem;
+  height: 35.4rem;
+  margin: 0 auto;
+}
+
 }
 
 /* // Large devices (desktops, 992px and up) */
