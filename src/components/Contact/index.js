@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { send } from 'emailjs-com';
+
 import { validateEmail } from '../../utils/helpers';
 
 const Contact = () => {
@@ -30,6 +32,28 @@ const Contact = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
+
+        console.log(formState);
+        const from_name = formState.name;
+        const message = formState.message;
+        const reply_to = formState.email;
+
+        const toSend = { from_name, message, reply_to };
+
+        console.log(toSend);
+
+        send(
+            'service_106gwhj',
+            'template_q48h3sn',
+            toSend,
+            'user_NVXWfdcOsviqZFCpy1AWZ'
+        )
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+            })
+            .catch((err) => {
+                console.log('FAILED...', err);
+            });
     }
 
     return (
@@ -55,7 +79,7 @@ const Contact = () => {
                         </div>
                     )}
                     <div id='form-btn-div' className='row'>
-                    <button id='form-btn' type="submit">Submit</button>
+                        <button id='form-btn' type="submit">Submit</button>
                     </div>
                 </form>
             </div>
