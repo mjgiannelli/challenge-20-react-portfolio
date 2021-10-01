@@ -7,6 +7,7 @@ const Contact = () => {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
+    const [response, setResponse] = useState(null);
 
     const handleChange = e => {
         if (e.target.name === 'email') {
@@ -33,14 +34,22 @@ const Contact = () => {
     const handleSubmit = e => {
         e.preventDefault();
 
-        console.log(formState);
         const from_name = formState.name;
         const message = formState.message;
         const reply_to = formState.email;
 
         const toSend = { from_name, message, reply_to };
 
-        console.log(toSend);
+        // reset input fields after submit
+        Array.from(document.querySelectorAll("input")).forEach(
+            input => (input.value = "")
+        );
+
+        // reset textarea fields after submit
+        Array.from(document.querySelectorAll('textarea')).forEach
+            (
+                input => (input.value = "")
+            );
 
         send(
             'service_106gwhj',
@@ -49,7 +58,12 @@ const Contact = () => {
             'user_NVXWfdcOsviqZFCpy1AWZ'
         )
             .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
+
+                setResponse(response)
+
+                setTimeout(() => {
+                    setResponse(null)
+                }, 2000)
             })
             .catch((err) => {
                 console.log('FAILED...', err);
@@ -59,7 +73,7 @@ const Contact = () => {
     return (
         <section>
             <h1 className='title'>Contact me</h1>
-            <div className='box'>
+            <div id='contact-form-div' className='box'>
                 <form id="contact-form" onSubmit={handleSubmit}>
                     <div className='row form'>
                         <label htmlFor="name">Name:</label>
@@ -81,6 +95,13 @@ const Contact = () => {
                     <div id='form-btn-div' className='row'>
                         <button id='form-btn' type="submit">Submit</button>
                     </div>
+                    {response && (
+                        <div>
+                            <p className='response'>
+                                Message Successfully Sent!
+                            </p>
+                        </div>
+                    )}
                 </form>
             </div>
         </section>
