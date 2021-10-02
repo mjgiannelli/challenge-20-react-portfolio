@@ -227,16 +227,6 @@ h5 {
   font-size: 2rem;
 }
 
-/* apply styles to header */
-header {
-  background-color: var(--primary-color);
-}
-
-header h1 {
-  background-color: var(--primary-color);
-  margin: 6rem 0;
-}
-
 hr {
   margin: 6rem 0;
 }
@@ -259,16 +249,10 @@ span {
   font-size: 2rem;
 }
 
-/* style the portfolio section */
-
 img {
   width: 100%;
   margin: auto 0;
   margin-bottom: 2rem;
-}
-
-.project {
-  text-align: center;
 }
 
 #resume-link-div {
@@ -296,69 +280,10 @@ ul {
   margin-bottom: .5rem;
 }
 
-.project {
-  position: relative;
-}
-
-.project-content {
-  background-color: var(--text-color);
-  justify-content: center;
-  text-align: center;
-  background-image: linear-gradient(#22c1c3,#fdbb2d);
-  display: flex;
-  align-items: center;
-}
-
-.project-links {
-  text-decoration: none;
-  color: blue;
-}
-
-.project_description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .5s, visibility .5s;
-  background-color: var(--text-color);
-  justify-content: center;
-  text-align: center;
-  background-image: linear-gradient(#22c1c3,#fdbb2d);
-  display: flex;
-}
-
-.project:hover .project_description {
-  visibility: visible;
-  opacity: 1;
-}
-
-.project-name {
-  margin-bottom: 3rem;
-  font-size: 3rem;
-}
-
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
-  .project-title {
-    font-size: 2.5rem;
-  }
-
-  .project-links {
-    font-size: 2rem;
-  }
- 
-  .project-name {
-    margin-bottom: 4rem;
-    font-size: 4rem;
-  }
 
 }
 
@@ -369,27 +294,10 @@ ul {
     width: 20%;
 }
 
-.project-title {
-  font-size: 3rem;
-}
-
-.project-links {
-  font-size: 2.5rem;
-}
-
-.project-name {
-  margin-bottom: 5rem;
-  font-size: 5rem;
-}
-
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
-  #name {
-      width: 100%;
-  }
 
   .col-3 {
       width: 30%;
@@ -399,22 +307,7 @@ ul {
     width: 40%;
 }
 
-  #projects {
-    justify-content: space-between;
-  }
-
-  .project-title {
-    font-size: 2rem;
-  }
-  
-  .project-links {
-    font-size: 1.5rem;
-}
-  
-  .project-name {
-    margin-bottom: 3rem;
-    font-size: 3rem;
-  }
+ 
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -428,18 +321,4 @@ ul {
       width: 45%;
       margin: 0 auto;
   }
-
-.project-title {
-  font-size: 2.25rem;
-}
-
-.project-links {
-  font-size: 2rem;
-}
-
-.project-name {
-  margin-bottom: 4rem;
-  font-size: 4rem;
-}
-
 }

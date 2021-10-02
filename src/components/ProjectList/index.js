@@ -1,4 +1,6 @@
 import { useState } from 'react';
+
+import './index.css';
 import { formatTitle } from '../../utils/helpers';
 
 const ProjectList = () => {
