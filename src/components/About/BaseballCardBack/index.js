@@ -1,3 +1,5 @@
+import './index.css';
+
 const BaseballCardBack = (props) => {
     return (
         <div id='back-card-container' className='card-container' onClick={props.handleClick}>

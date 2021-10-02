@@ -1,5 +1,7 @@
 import { SocialIcon } from 'react-social-icons';
 
+import './index.css';
+
 function Footer() {
   return (
     <footer className='box'>

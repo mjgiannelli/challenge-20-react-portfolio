@@ -198,28 +198,10 @@ body {
   text-align: center;
 }
 
-.col-2 {
-  text-align: center;
-  width: 100%;
-}
-
-.col-3 {
-  width: 100%;
-  text-align: center;
-}
-
 .col-4 {
   width: 100%;
 }
 
-.col-5 {
-  width: 100%;
-  text-align: center;
-}
-
-.col-7 {
-  width: 100%;
-}
 
 h2 {
   font-size: 4rem;
@@ -245,50 +227,9 @@ h5 {
   font-size: 2rem;
 }
 
-/* apply styles to header */
-header {
-  background-color: var(--primary-color);
-}
-
-header h1 {
-  background-color: var(--primary-color);
-  margin: 6rem 0;
-}
-
-/*apply styles to the nav bar and links*/
-
-header nav {
-  background-color: var(--primary-color);
-}
-
-header a {
-  text-decoration: none;
-  color: var(--text-color);
-  display: inline-block;
-  font-size: 4rem;
-}
-
-header a:hover {
-  color: var(--secondary-color);
-  font-weight: bold;
-}
-
-header nav ul {
-  font-style: var(--text-style);
-  list-style-type: none;
-}
-
-header nav ul li a {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  font-family: var(--text-style);
-  font-size: 3rem;
-}
-
 hr {
   margin: 6rem 0;
 }
-
-/* style the "about me" section */
 
 .title {
   font-family: var(--text-style);
@@ -303,16 +244,10 @@ p {
   margin: .5rem 0;
 }
 
-#bio {
-  margin: 3rem 0;
-}
-
 span {
   color: var(--secondary-color);
   font-size: 2rem;
 }
-
-/* style the portfolio section */
 
 img {
   width: 100%;
@@ -320,255 +255,8 @@ img {
   margin-bottom: 2rem;
 }
 
-/* style the contact info section */
-
-#contact-info a {
-  text-decoration: none;
-  font-family: var(--text-style);
-  color: var(--text-color);
-  margin: 1rem 0;
-  font-size: 2rem;
-}
-
-#contact-info a:hover {
-  color: var(--secondary-color);
-  font-weight: bold;
-}
-
-/* style the footer */
-
-footer h6 {
-  color: var(--text-color);
-  font-family: var(--text-style);
-  font-size: 2rem;
-}
-
-footer .col-10 {
-  text-align: center;
-}
-
-#icon-div {
-  justify-content: center;
-  padding: 1rem 0;
-}
-
-.project {
-  text-align: center;
-}
-
-.form {
-  flex-direction: column;
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-#form-btn-div {
-  justify-content: center;
-}
-
-#form-btn {
-  font-size: 2rem;
-  align-items: center;
-  width: 12.8rem;
-}
-
-#resume-link-div {
-  justify-content: center;
-}
-
-#resume-link {
-  text-decoration: none;
-  color: var(--text-color);
-  margin-bottom: 3rem;
-  font-size: 2rem;
-}
-
-#skills-div {
-  justify-content: center;
-}
-
 ul {
   list-style-type: none;
-}
-
-.skill {
-  text-decoration: none;
-  font-size: 2rem;
-  margin-bottom: .5rem;
-}
-
-.error-text {
-  color: var(--secondary-color);
-  font-size: 3rem;
-}
-
-.navActive {
-  color: var(--secondary-color);
-}
-
-.card-container {
-  border: solid .5rem white;
-  width: 20rem;
-  height: 30rem;
-  margin: auto;
-  background-color: rgb(211,184,147);
-  display: flex;
-}
-
-#front-card-body {
-  border: solid .3rem white;
-  width: 95%;
-  height: 95%;
-  margin: auto;
-  background: url('./assets/images/card-2.jpg') center center no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.topps-div {
-  padding-top: .5rem;
-  padding-right: .5rem;
-}
-
-.topps {
-  width: 6rem;
-}
-
-#front-card-signature-div {
-  border: solid .5rem white;
-  border-image: url('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/285/star_2b50.png');
-  height: 20%;
-  width: 80%;
-  margin-bottom: 1rem;
-  background-color: black;
-  display: flex;
-  align-self: center;
-}
-
-#card-signature {
-  background-color: rgb(211,184,147);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#print-name {
-  color: black;
-  width: 100%;
-  font-size: 1rem;
-  text-align: end;
-  padding-right: .2rem;
-}
-
-#cursive-name {
-  color: black;
-    width: 100%;
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    margin-top: 0rem;
-}
-
-#back-card-body {
-  width: 100%;
-  margin-top: .5rem;
-}
-
-#num {
-  font-size: 4rem;
-  border: black .3rem solid;
-  border-radius: 10rem;
-  color: black;
-  background: repeating-linear-gradient(
-  90deg, white 3rem, blue, white, blue, white);
-  font-weight: bold;
-  padding: .2rem;
-}
-
-#back-header {
-  justify-content: space-between;
-  padding: 1rem;
-}
-
-#stats-div {
-  border: black .3rem solid;
-  width: 95%;
-  margin: .5rem auto;
-}
-
-#stats-box {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
- }
-
-#stats-row-titles {
-    flex-direction: column;
-    width: 50%;
-    justify-content: flex-end;
- }
-
-#stats-row-nums {
-    flex-direction: column;
-    width: 50%;
-    border-left:black .1rem solid;
- }
-
- #git-stats-header {
-   border-bottom: black .1rem solid;
- }
-
- .stats {
-   width: 100%;
- }
-
-.project {
-  position: relative;
-}
-
-.project-content {
-  background-color: var(--text-color);
-  justify-content: center;
-  text-align: center;
-  background-image: linear-gradient(#22c1c3,#fdbb2d);
-  display: flex;
-  align-items: center;
-}
-
-.project-links {
-  text-decoration: none;
-  color: blue;
-}
-
-.project_description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .5s, visibility .5s;
-  background-color: var(--text-color);
-  justify-content: center;
-  text-align: center;
-  background-image: linear-gradient(#22c1c3,#fdbb2d);
-  display: flex;
-}
-
-.project:hover .project_description {
-  visibility: visible;
-  opacity: 1;
-}
-
-.project-name {
-  margin-bottom: 3rem;
-  font-size: 3rem;
 }
 
 }
@@ -576,66 +264,19 @@ ul {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
-  .project-title {
-    font-size: 2.5rem;
-  }
-
-  .project-links {
-    font-size: 2rem;
-  }
- 
-  .project-name {
-    margin-bottom: 4rem;
-    font-size: 4rem;
-  }
-
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-#nav-links {
-  justify-content: space-between;
-}
   .col-2 {
     width: 20%;
-}
-
-.stats {
-  width: 100%;
-}
-
-.project-title {
-  font-size: 3rem;
-}
-
-.project-links {
-  font-size: 2.5rem;
-}
-
-.project-name {
-  margin-bottom: 5rem;
-  font-size: 5rem;
-}
-
-#contact-form {
-  width: 61.5rem;
-  height: 35.4rem;
-  margin: 0 auto;
 }
 
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  #selfie {
-      width: 50%;
-      margin: 0 auto;
-  }
-
-  #name {
-      width: 100%;
-  }
 
   .col-3 {
       width: 30%;
@@ -645,62 +286,12 @@ ul {
     width: 40%;
 }
 
-  #projects {
-    justify-content: space-between;
-  }
-
-  #contact-info {
-      width: 100%;
-  }
-  .contact-row {
-     align-items: center;
-     justify-content: space-evenly;
-  }
-
-  #contact {
-      width: 20%;
-  }
-
-  #number {
-      width: 15%;
-  }
-
-  #email {
-      width: 30%;
-  }
-  
-  #github {
-      width: 12%;
-  }
-
-  #linkedin {
-      width: 12%
-  }
-
-  .project-title {
-    font-size: 2rem;
-  }
-  
-  .project-links {
-    font-size: 1.5rem;
-}
-  
-  .project-name {
-    margin-bottom: 3rem;
-    font-size: 3rem;
-  }
+ 
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  header a {
-      font-size: 6rem;
-  }
-
-  header nav ul li a {
-      font-size: 4rem;
-  }
-
+  
   p {
       font-size: 2.5rem;
   }
@@ -709,72 +300,4 @@ ul {
       width: 45%;
       margin: 0 auto;
   }
-
-  .picture {
-      width: 45rem;
-  }
-
-  #weather-dash {
-      width: 45rem;
-  }
-
-  #movie-date {
-      height: 25rem;
-  }
-
-  #profile-gen {
-      width: 45rem;
-      height: 30rem;
-  }
-
-  #contact-info a {
-      font-size: 3rem;
-  }
-
-  #contact {
-      margin: 0;
-      width: 20%;
-  }
-
-  #number {
-      width: 17%;
-  }
-
-  #email {
-      width: 32%;
-  }
-  
-  #github {
-      width: 10%;
-  }
-
-  #linkedin {
-      width: 12%
-  }
-
-  footer .col-10 {
-      font-size: 3rem;
-  }
-
-  #cursive-name {
-    font-size: 2rem;
-}
-
-.stats {
-  font-size: 1.75rem;
-}
-
-.project-title {
-  font-size: 2.25rem;
-}
-
-.project-links {
-  font-size: 2rem;
-}
-
-.project-name {
-  margin-bottom: 4rem;
-  font-size: 4rem;
-}
-
 }

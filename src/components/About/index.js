@@ -3,6 +3,7 @@ import ReactCardFlip from 'react-card-flip'
 
 import BaseballCardFront from './BaseballCardFront';
 import BaseballCardBack from './BaseballCardBack';
+import './index.css';
 
 function AboutMe() {
 

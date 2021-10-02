@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import './index.css';
+
 const Nav = (props) => {
 
   const {
