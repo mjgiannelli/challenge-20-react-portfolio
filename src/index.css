@@ -406,61 +406,6 @@ ul {
   color: var(--secondary-color);
 }
 
-
-#back-card-body {
-  width: 100%;
-  margin-top: .5rem;
-}
-
-#num {
-  font-size: 4rem;
-  border: black .3rem solid;
-  border-radius: 10rem;
-  color: black;
-  background: repeating-linear-gradient(
-  90deg, white 3rem, blue, white, blue, white);
-  font-weight: bold;
-  padding: .2rem;
-}
-
-#back-header {
-  justify-content: space-between;
-  padding: 1rem;
-}
-
-#stats-div {
-  border: black .3rem solid;
-  width: 95%;
-  margin: .5rem auto;
-}
-
-#stats-box {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
- }
-
-#stats-row-titles {
-    flex-direction: column;
-    width: 50%;
-    justify-content: flex-end;
- }
-
-#stats-row-nums {
-    flex-direction: column;
-    width: 50%;
-    border-left:black .1rem solid;
- }
-
- #git-stats-header {
-   border-bottom: black .1rem solid;
- }
-
- .stats {
-   width: 100%;
- }
-
 .project {
   position: relative;
 }
@@ -535,10 +480,6 @@ ul {
 }
   .col-2 {
     width: 20%;
-}
-
-.stats {
-  width: 100%;
 }
 
 .project-title {
@@ -646,23 +587,6 @@ ul {
       margin: 0 auto;
   }
 
-  .picture {
-      width: 45rem;
-  }
-
-  #weather-dash {
-      width: 45rem;
-  }
-
-  #movie-date {
-      height: 25rem;
-  }
-
-  #profile-gen {
-      width: 45rem;
-      height: 30rem;
-  }
-
   #contact-info a {
       font-size: 3rem;
   }
@@ -691,10 +615,6 @@ ul {
   footer .col-10 {
       font-size: 3rem;
   }
-
-.stats {
-  font-size: 1.75rem;
-}
 
 .project-title {
   font-size: 2.25rem;
