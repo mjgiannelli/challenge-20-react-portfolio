@@ -314,21 +314,6 @@ img {
   margin-bottom: 2rem;
 }
 
-/* style the contact info section */
-
-#contact-info a {
-  text-decoration: none;
-  font-family: var(--text-style);
-  color: var(--text-color);
-  margin: 1rem 0;
-  font-size: 2rem;
-}
-
-#contact-info a:hover {
-  color: var(--secondary-color);
-  font-weight: bold;
-}
-
 /* style the footer */
 
 footer h6 {
@@ -348,22 +333,6 @@ footer .col-10 {
 
 .project {
   text-align: center;
-}
-
-.form {
-  flex-direction: column;
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-#form-btn-div {
-  justify-content: center;
-}
-
-#form-btn {
-  font-size: 2rem;
-  align-items: center;
-  width: 12.8rem;
 }
 
 #resume-link-div {
@@ -389,11 +358,6 @@ ul {
   text-decoration: none;
   font-size: 2rem;
   margin-bottom: .5rem;
-}
-
-.error-text {
-  color: var(--secondary-color);
-  font-size: 3rem;
 }
 
 .navActive {
@@ -489,12 +453,6 @@ ul {
   font-size: 5rem;
 }
 
-#contact-form {
-  width: 61.5rem;
-  height: 35.4rem;
-  margin: 0 auto;
-}
-
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -518,34 +476,6 @@ ul {
 
   #projects {
     justify-content: space-between;
-  }
-
-  #contact-info {
-      width: 100%;
-  }
-  .contact-row {
-     align-items: center;
-     justify-content: space-evenly;
-  }
-
-  #contact {
-      width: 20%;
-  }
-
-  #number {
-      width: 15%;
-  }
-
-  #email {
-      width: 30%;
-  }
-  
-  #github {
-      width: 12%;
-  }
-
-  #linkedin {
-      width: 12%
   }
 
   .project-title {
@@ -579,31 +509,6 @@ ul {
   .col-5 {
       width: 45%;
       margin: 0 auto;
-  }
-
-  #contact-info a {
-      font-size: 3rem;
-  }
-
-  #contact {
-      margin: 0;
-      width: 20%;
-  }
-
-  #number {
-      width: 17%;
-  }
-
-  #email {
-      width: 32%;
-  }
-  
-  #github {
-      width: 10%;
-  }
-
-  #linkedin {
-      width: 12%
   }
 
   footer .col-10 {

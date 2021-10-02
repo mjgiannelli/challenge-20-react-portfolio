@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { send } from 'emailjs-com';
 
 import { validateEmail } from '../../utils/helpers';
+import './index.css';
 
 const Contact = () => {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
