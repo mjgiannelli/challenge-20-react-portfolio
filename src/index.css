@@ -314,23 +314,6 @@ img {
   margin-bottom: 2rem;
 }
 
-/* style the footer */
-
-footer h6 {
-  color: var(--text-color);
-  font-family: var(--text-style);
-  font-size: 2rem;
-}
-
-footer .col-10 {
-  text-align: center;
-}
-
-#icon-div {
-  justify-content: center;
-  padding: 1rem 0;
-}
-
 .project {
   text-align: center;
 }
@@ -509,10 +492,6 @@ ul {
   .col-5 {
       width: 45%;
       margin: 0 auto;
-  }
-
-  footer .col-10 {
-      font-size: 3rem;
   }
 
 .project-title {
