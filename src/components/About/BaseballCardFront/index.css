@@ -1,3 +1,5 @@
+@media (min-width: 0px) {
+
 .card-container {
     border: solid .5rem white;
     width: 20rem;
@@ -63,3 +65,12 @@
       margin-top: 0rem;
   }
   
+}
+
+@media (min-width: 1200px) {
+
+    #cursive-name {
+        font-size: 2rem;
+    }
+
+}
