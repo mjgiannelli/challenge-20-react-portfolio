@@ -198,28 +198,10 @@ body {
   text-align: center;
 }
 
-.col-2 {
-  text-align: center;
-  width: 100%;
-}
-
-.col-3 {
-  width: 100%;
-  text-align: center;
-}
-
 .col-4 {
   width: 100%;
 }
 
-.col-5 {
-  width: 100%;
-  text-align: center;
-}
-
-.col-7 {
-  width: 100%;
-}
 
 h2 {
   font-size: 4rem;
@@ -253,35 +235,6 @@ header {
 header h1 {
   background-color: var(--primary-color);
   margin: 6rem 0;
-}
-
-/*apply styles to the nav bar and links*/
-
-header nav {
-  background-color: var(--primary-color);
-}
-
-header a {
-  text-decoration: none;
-  color: var(--text-color);
-  display: inline-block;
-  font-size: 4rem;
-}
-
-header a:hover {
-  color: var(--secondary-color);
-  font-weight: bold;
-}
-
-header nav ul {
-  font-style: var(--text-style);
-  list-style-type: none;
-}
-
-header nav ul li a {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  font-family: var(--text-style);
-  font-size: 3rem;
 }
 
 hr {
@@ -341,10 +294,6 @@ ul {
   text-decoration: none;
   font-size: 2rem;
   margin-bottom: .5rem;
-}
-
-.navActive {
-  color: var(--secondary-color);
 }
 
 .project {
@@ -416,9 +365,6 @@ ul {
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-#nav-links {
-  justify-content: space-between;
-}
   .col-2 {
     width: 20%;
 }
@@ -440,10 +386,6 @@ ul {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  #selfie {
-      width: 50%;
-      margin: 0 auto;
-  }
 
   #name {
       width: 100%;
@@ -477,14 +419,7 @@ ul {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  header a {
-      font-size: 6rem;
-  }
-
-  header nav ul li a {
-      font-size: 4rem;
-  }
-
+  
   p {
       font-size: 2.5rem;
   }
