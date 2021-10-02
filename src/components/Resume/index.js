@@ -1,3 +1,5 @@
+import './index.css';
+
 const Resume = () => {
     const skills = [
         {
