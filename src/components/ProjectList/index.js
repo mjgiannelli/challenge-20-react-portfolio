@@ -7,9 +7,9 @@ const ProjectList = () => {
 
     const [projects] = useState([
         {
-            name: 'find-my-boards',
-            deploy: 'https://findmyboards.herokuapp.com/',
-            github: 'https://github.com/janekv20/find-my-boards'
+            name: 'board-reactions',
+            deploy: 'https://board-reactions.herokuapp.com/',
+            github: 'https://github.com/JSheleg/board-reactions'
         },
         {
             name: 'movie-date',
