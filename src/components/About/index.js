@@ -23,7 +23,7 @@ function AboutMe() {
           Accountant turned Web Developer <span>&copy;</span> May 2, 2021.
         </p>
         <p id='bio' className="col-10">
-          I've found my passsion in life. Coding satiates everything I
+          I've found my passion in life. Coding satiates everything I
           look for in a position. It's challenging, logic based and always evolving keeping me in the
           perpetual state of being a student. I wake up every morning thrilled to code!
         </p>
