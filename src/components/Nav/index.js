@@ -1,13 +1,19 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import './index.css';
 
 const Nav = (props) => {
 
+  const htmlEl = document.querySelector('html');
+
+  const htmlThemeEl = htmlEl.getAttribute('theme');
+
   const {
     selectedNavLink,
     setSelectedNavLink
   } = props;
+
+  const [btnContent, setBtnContent] = useState('Light Mode');
 
   useEffect(() => {
     document.title = selectedNavLink
@@ -15,13 +21,16 @@ const Nav = (props) => {
 
   const handleHtmlThemeToggle = () => {
     const htmlEl = document.querySelector('html');
-
     const htmlThemeEl = htmlEl.getAttribute('theme');
 
     if (htmlThemeEl === 'Dark') {
       htmlEl.setAttribute('theme', 'Light')
+
+      setBtnContent('Dark Mode')
     } else {
       htmlEl.setAttribute('theme', 'Dark')
+
+      setBtnContent('Light Mode');
     }
   }
 
@@ -31,7 +40,7 @@ const Nav = (props) => {
         <h1 id='name' className='col-3'>
           <a href="https://www.markgiannelli.com" id='home'>Mark Giannelli <br /> Portfolio</a>
         </h1>
-        <button onClick={handleHtmlThemeToggle}>Dark</button>
+        <button onClick={handleHtmlThemeToggle}>{btnContent}</button>
         <nav className='col-7'>
           <div className='box'>
             <ul id='nav-links' className='row'>
