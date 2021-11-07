@@ -6,7 +6,6 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
-import { StoreProvider } from './utils/GlobalState';
 
 function App() {
 
@@ -29,7 +28,6 @@ function App() {
 
   return (
     <div>
-      <StoreProvider>
         <Nav
           navLinks={navLinks}
           selectedNavLink={selectedNavLink}
@@ -55,7 +53,6 @@ function App() {
           )}
         </main>
         <Footer />
-      </StoreProvider>
     </div>
   );
 }
