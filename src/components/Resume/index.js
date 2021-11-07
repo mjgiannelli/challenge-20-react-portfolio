@@ -31,8 +31,6 @@ const Resume = () => {
         }
     ]
 
-    console.log(skills)
-
     return (
         <section>
             <h2 className='title'>Resume</h2>
