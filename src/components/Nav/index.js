@@ -5,34 +5,29 @@ import ToggleSwitch from "../ToggleSwitch";
 
 const Nav = (props) => {
 
-  const htmlEl = document.querySelector('html');
-
-  const htmlThemeEl = htmlEl.getAttribute('theme');
+  const [toggled, setToggled] = useState(false);
 
   const {
     selectedNavLink,
     setSelectedNavLink
   } = props;
 
-  const [btnContent, setBtnContent] = useState('Light Mode');
-
   useEffect(() => {
     document.title = selectedNavLink
   }, [selectedNavLink]);
 
-  const handleHtmlThemeToggle = () => {
+  const handleToggle = async () => {
+
     const htmlEl = document.querySelector('html');
-    const htmlThemeEl = htmlEl.getAttribute('theme');
 
-    if (htmlThemeEl === 'Dark') {
+    setToggled(!toggled);
+
+    if (toggled === false) {
       htmlEl.setAttribute('theme', 'Light')
-
-      setBtnContent('Dark Mode')
     } else {
       htmlEl.setAttribute('theme', 'Dark')
-
-      setBtnContent('Light Mode');
     }
+    
   }
 
   return (
@@ -41,8 +36,10 @@ const Nav = (props) => {
         <h1 id='name' className='col-3'>
           <a href="https://www.markgiannelli.com" id='home'>Mark Giannelli <br /> Portfolio</a>
         </h1>
-        <button onClick={handleHtmlThemeToggle}>{btnContent}</button>
-        <ToggleSwitch/>
+        <ToggleSwitch
+          toggled={toggled}
+          handleToggle={handleToggle}
+        />
         <nav className='col-7'>
           <div className='box'>
             <ul id='nav-links' className='row'>

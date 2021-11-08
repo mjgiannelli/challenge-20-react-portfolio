@@ -3,11 +3,7 @@ import {useState} from 'react';
 import './index.css';
 
 const ToggleSwitch = (props) => {
-    const [toggled, setToggled] = useState(false);
-
-    const handleToggle = () => {
-        setToggled(!toggled);
-    }
+    const {toggled, handleToggle} = props
 
     return(
         <label className='toggle-switch'>
