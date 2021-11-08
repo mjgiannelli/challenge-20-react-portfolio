@@ -11,8 +11,9 @@ const ToggleSwitch = (props) => {
 
     return(
         <label className='toggle-switch'>
-            <input type='checkbox' checked={isToggled} onChange={handleToggle}></input>
+            <input type='checkbox' checked={toggled} onChange={handleToggle}></input>
             <span className='switch'></span>
+            <span className='text'></span>
         </label>
     );
 }

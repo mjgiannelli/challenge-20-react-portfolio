@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import './index.css';
+import ToggleSwitch from "../ToggleSwitch";
 
 const Nav = (props) => {
 
@@ -41,6 +42,7 @@ const Nav = (props) => {
           <a href="https://www.markgiannelli.com" id='home'>Mark Giannelli <br /> Portfolio</a>
         </h1>
         <button onClick={handleHtmlThemeToggle}>{btnContent}</button>
+        <ToggleSwitch/>
         <nav className='col-7'>
           <div className='box'>
             <ul id='nav-links' className='row'>
