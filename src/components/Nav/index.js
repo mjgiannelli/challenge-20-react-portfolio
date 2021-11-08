@@ -1,8 +1,11 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import './index.css';
+import ToggleSwitch from "../ToggleSwitch";
 
 const Nav = (props) => {
+
+  const [toggled, setToggled] = useState(false);
 
   const {
     selectedNavLink,
@@ -13,25 +16,32 @@ const Nav = (props) => {
     document.title = selectedNavLink
   }, [selectedNavLink]);
 
-  const handleHtmlThemeToggle = () => {
+  const handleToggle = async () => {
+
     const htmlEl = document.querySelector('html');
 
-    const htmlThemeEl = htmlEl.getAttribute('theme');
+    setToggled(!toggled);
 
-    if (htmlThemeEl === 'Dark') {
+    if (toggled === false) {
       htmlEl.setAttribute('theme', 'Light')
     } else {
       htmlEl.setAttribute('theme', 'Dark')
     }
+
   }
 
   return (
     <header className='box'>
+      <div id='theme-toggle-div' className='row'>
+          <ToggleSwitch
+            toggled={toggled}
+            handleToggle={handleToggle}
+          />
+      </div>
       <div className='row'>
         <h1 id='name' className='col-3'>
           <a href="https://www.markgiannelli.com" id='home'>Mark Giannelli <br /> Portfolio</a>
         </h1>
-        <button onClick={handleHtmlThemeToggle}>Dark</button>
         <nav className='col-7'>
           <div className='box'>
             <ul id='nav-links' className='row'>
