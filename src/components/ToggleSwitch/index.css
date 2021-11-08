@@ -1,7 +1,7 @@
 .toggle-switch {
     position: relative;
     display: inline-block;
-    width: 100px;
+    width: 110px;
     height: 25px;
   }
   .toggle-switch input[type="checkbox"] {
@@ -30,7 +30,7 @@
     transition: transform 0.2s ease;
   }
   .toggle-switch input[type="checkbox"]:checked + .switch::before {
-    transform: translateX(75px);
+    transform: translateX(84.5px);
     background-color: #aaa;
   }
   .toggle-switch input[type="checkbox"]:checked + .switch {
@@ -55,8 +55,8 @@
     color: #ffffff;
     position: absolute;
     margin-top: 0.4rem;
-        margin-left: 0.35rem;
-        font-size: 1.5rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
     content: "Light Mode";
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
