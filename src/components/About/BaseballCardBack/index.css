@@ -54,8 +54,8 @@
          width: 100%;
        } 
        
-      #placeholder-div {
-        height: 2.1rem;
+      #text-back {
+        color: var(--primary-color);
       }
 }
 
@@ -71,10 +71,6 @@
 
     .stats {
         font-size: 1.75rem;
-      }
-
-      #placeholder-div {
-        height: 2.8rem;
       }
 
 }

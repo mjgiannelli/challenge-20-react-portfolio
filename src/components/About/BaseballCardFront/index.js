@@ -20,7 +20,7 @@ const BaseballCardFront = (props) => {
                     </div>
                 </div>
             </div>
-            <p className="col-10">
+            <p id='text-front' className="col-10">
                 Flip the card over to see GitHub Stats!
             </p>
         </div>

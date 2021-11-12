@@ -34,8 +34,8 @@ const BaseballCardBack = (props) => {
                     </div>
                 </div>
             </div>
-            <p id='placeholder-div' className="col-10">
-                
+            <p id='text-back' className="col-10">
+                Flip the card over to see GitHub Stats!
             </p>
         </div>
 
