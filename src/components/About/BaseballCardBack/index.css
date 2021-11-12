@@ -52,8 +52,11 @@
       
        .stats {
          width: 100%;
-       }      
-
+       } 
+       
+      #placeholder-div {
+        height: 2.1rem;
+      }
 }
 
 @media (min-width: 768px) {
@@ -68,6 +71,10 @@
 
     .stats {
         font-size: 1.75rem;
+      }
+
+      #placeholder-div {
+        height: 2.8rem;
       }
 
 }
