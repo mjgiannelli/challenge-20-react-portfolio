@@ -68,7 +68,10 @@ const ProjectList = () => {
                                     <p className='project-name'>{formatTitle(image.name)}</p>
                                 </div>
                                 <div className='col-10'>
-                                    <p className='project-title'>Deployed App and Github Repo Links</p>
+                                    <p className='project-prob'>{image.problem_solved}</p>
+                                </div>
+                                <div className='col-10'>
+                                    <p className='project-tech'>Tech Used: {image.technologies_used}</p>
                                 </div>
                                 <div className='col-10'>
                                     <a className='project-links' href={image.deploy} target='_blank'>Deployed App Link</a>
