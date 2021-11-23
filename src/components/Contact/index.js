@@ -73,7 +73,7 @@ const Contact = () => {
 
     return (
         <section>
-            <h1 className='title'>Contact me</h1>
+            <h1 className='title'>Contact me below or @ <a id='email-link' href='mailto: giannelli.mark@gmail.com'>giannelli.mark@gmail.com</a></h1>
             <div id='contact-form-div' className='box'>
                 <form id="contact-form" onSubmit={handleSubmit}>
                     <div className='row form'>
