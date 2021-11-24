@@ -25,7 +25,7 @@ const ProjectList = () => {
             deploy: 'https://shrouded-escarpment-97500.herokuapp.com/',
             problem_solved: 'Convienient way for small businesses to organize tasks.',
             technologies_used: 'Node, Express, JavaScript, Database, RESTful API.',
-            github: 'https://github.com/mjgiannelli/challenge-11-note-taker'
+            github: 'https://github.com/mjgiannelli/note-taker'
         },
         {
             name: 'pizza-hunt',
@@ -42,11 +42,11 @@ const ProjectList = () => {
             github: 'https://github.com/mjgiannelli/tech-blog'
         },
         {
-            name: 'weather-dash',
-            deploy: 'https://mjgiannelli.github.io/challenge-6-weather-dashboard/',
+            name: 'weather-rain-or-shine',
+            deploy: 'https://mjgiannelli.github.io/weather-rain-or-shine/',
             problem_solved: 'Allows user to search current weather and 5-day forecast for any city.',
             technologies_used: 'JavaScript, HTML, CSS, Client Side API.',
-            github: 'https://github.com/mjgiannelli/challenge-6-weather-dashboard'
+            github: 'https://github.com/mjgiannelli/weather-rain-or-shine'
         }
     ])
 
