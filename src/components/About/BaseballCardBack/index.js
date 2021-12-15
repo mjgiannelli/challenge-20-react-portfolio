@@ -25,10 +25,10 @@ const BaseballCardBack = (props) => {
                             </div>
                             <div id='stats-row-nums' className='row'>
                                 <p id='year' className='col-2 stats'>2021</p>
-                                <p className='col-2 stats'>1,548</p>
-                                <p className='col-2 stats'>144</p>
-                                <p className='col-2 stats'>372</p>
-                                <p className='col-2 stats'>2,064</p>
+                                <p className='col-2 stats'>1,676</p>
+                                <p className='col-2 stats'>112</p>
+                                <p className='col-2 stats'>446</p>
+                                <p className='col-2 stats'>2,234</p>
                             </div>
                         </div>
                     </div>
