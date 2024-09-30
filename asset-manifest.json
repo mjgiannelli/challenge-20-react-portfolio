@@ -1,31 +1,33 @@
 {
   "files": {
     "main.css": "/static/css/main.be4e936d.chunk.css",
-    "main.js": "/static/js/main.e4d98913.chunk.js",
-    "main.js.map": "/static/js/main.e4d98913.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b5c6023d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b5c6023d.js.map",
-    "static/js/2.11bac357.chunk.js": "/static/js/2.11bac357.chunk.js",
-    "static/js/2.11bac357.chunk.js.map": "/static/js/2.11bac357.chunk.js.map",
-    "static/js/3.770b0388.chunk.js": "/static/js/3.770b0388.chunk.js",
-    "static/js/3.770b0388.chunk.js.map": "/static/js/3.770b0388.chunk.js.map",
+    "main.js": "/static/js/main.496c5c6a.chunk.js",
+    "main.js.map": "/static/js/main.496c5c6a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5f729f79.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5f729f79.js.map",
+    "static/js/2.b7e19da6.chunk.js": "/static/js/2.b7e19da6.chunk.js",
+    "static/js/2.b7e19da6.chunk.js.map": "/static/js/2.b7e19da6.chunk.js.map",
+    "static/js/3.8a7a2f24.chunk.js": "/static/js/3.8a7a2f24.chunk.js",
+    "static/js/3.8a7a2f24.chunk.js.map": "/static/js/3.8a7a2f24.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.be4e936d.chunk.css.map": "/static/css/main.be4e936d.chunk.css.map",
-    "static/js/2.11bac357.chunk.js.LICENSE.txt": "/static/js/2.11bac357.chunk.js.LICENSE.txt",
+    "static/js/2.b7e19da6.chunk.js.LICENSE.txt": "/static/js/2.b7e19da6.chunk.js.LICENSE.txt",
     "static/media/board-reactions.png": "/static/media/board-reactions.9bfd3971.png",
     "static/media/index.css": "/static/media/card-2.c77eb6a7.jpg",
     "static/media/find-my-boards.png": "/static/media/find-my-boards.0f619411.png",
+    "static/media/find-my-books.png": "/static/media/find-my-books.1e6961c2.png",
     "static/media/movie-date.png": "/static/media/movie-date.d9a0b958.png",
     "static/media/note-taker.png": "/static/media/note-taker.7a665014.png",
     "static/media/pizza-hunt.png": "/static/media/pizza-hunt.03eaa81f.png",
     "static/media/screenshot.png": "/static/media/screenshot.c4d7dd22.png",
+    "static/media/shop-shop.png": "/static/media/shop-shop.bfb370ee.png",
     "static/media/tech-blog.png": "/static/media/tech-blog.e239cac3.png",
     "static/media/weather-rain-or-shine.png": "/static/media/weather-rain-or-shine.83a689b5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b5c6023d.js",
-    "static/js/2.11bac357.chunk.js",
+    "static/js/runtime-main.5f729f79.js",
+    "static/js/2.b7e19da6.chunk.js",
     "static/css/main.be4e936d.chunk.css",
-    "static/js/main.e4d98913.chunk.js"
+    "static/js/main.496c5c6a.chunk.js"
   ]
 }
