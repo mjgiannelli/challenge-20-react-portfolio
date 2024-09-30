@@ -15,6 +15,9 @@ const Resume = () => {
             name: 'JavaScript'
         },
         {
+            name: 'C#'
+        },
+        {
             name: 'React'
         },
         {
@@ -28,15 +31,23 @@ const Resume = () => {
         },
         {
             name: 'MySQL'
+        },
+        {
+            name: 'Dotnet'
+        },
+        {
+            name: 'WASM'
+        },
+        {
+            name: 'Blazor'
         }
     ]
-
     return (
         <section>
             <h2 className='title'>Resume</h2>
             <div className='box'>
                 <div id='resume-link-div' className='row'>
-                    <a id='resume-link' href='https://drive.google.com/uc?export=download&id=1LuV8Xtmh3IbubZY3IaxK8kGpKIrT23pE' download>Click Me To Download Resume 😃</a>
+                    <a id='resume-link' href='https://drive.google.com/uc?export=download&id=1PFVSKK72je7FWJG1TbOVrfImTiEODm-B' download>Click Me To Download Resume 😃</a>
                 </div>
                 <h3>Proficiencies</h3>
                 <div id='skills-div' className='row'>
